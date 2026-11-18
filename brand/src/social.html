@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Quebra-Mar — Social templates</title>
+<style>
+  :root{--mare:#0F4C5C;--recife:#3A8D8F;--coral:#E07A5F;--areia:#F2E8CF;--cafe:#3B2A24;--creme:#FFF9F0}
+  *{box-sizing:border-box;margin:0}
+  body{background:#ccc;font-family:Inter,sans-serif}
+  .post{width:1080px;height:1080px;background:var(--areia) url(../logo/pattern-waves.svg);background-size:240px;
+        position:relative;display:flex;flex-direction:column;justify-content:center;padding:110px}
+  .panel{background:var(--creme);border-radius:48px;padding:80px 84px;box-shadow:0 18px 0 var(--mare)}
+  .kicker{font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--recife);font-size:30px}
+  .title{font-family:Lora,serif;font-weight:700;color:var(--mare);font-size:104px;line-height:1.02;margin:22px 0 26px}
+  .sub{font-size:36px;color:var(--cafe);line-height:1.4}
+  .price{position:absolute;right:120px;top:140px;background:var(--coral);color:var(--cafe);border-radius:999px;
+         width:230px;height:230px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+         font-weight:700;font-size:56px;transform:rotate(-8deg)}
+  .price small{font-size:24px;font-weight:600;letter-spacing:.12em}
+  .logo{position:absolute;left:110px;bottom:70px;height:96px}
+  .handle{position:absolute;right:110px;bottom:96px;font-size:30px;font-weight:600;color:var(--mare)}
+  .story{width:1080px;height:1920px;background:var(--mare);color:var(--creme);position:relative;
+         display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px}
+  .story .wave{position:absolute;left:0;right:0;height:260px;background:var(--areia) url(../logo/pattern-waves.svg);background-size:200px}
+  .story .top{top:0}.story .bottom{bottom:0}
+  .story .icon{width:260px;margin-bottom:60px}
+  .story .k{letter-spacing:.24em;text-transform:uppercase;font-weight:600;font-size:34px;color:var(--areia)}
+  .story h2{font-family:Lora,serif;font-weight:700;font-size:120px;line-height:1.05;margin:30px 0}
+  .story p{font-size:44px;line-height:1.4;color:var(--areia)}
+  .story .cta{margin-top:70px;background:var(--coral);color:var(--cafe);font-weight:700;font-size:44px;padding:30px 70px;border-radius:999px}
+</style>
+</head>
+<body>
+  <div class="post" id="post">
+    <div class="price"><small>SÓ HOJE</small>R$ 9</div>
+    <div class="panel">
+      <div class="kicker">Toda sexta-feira</div>
+      <div class="title">Bolo de rolo quentinho</div>
+      <div class="sub">Fatia generosa com um café coado na hora. Chega cedo, que acaba rápido.</div>
+    </div>
+    <img class="logo" src="../logo/logo-horizontal.svg" alt="">
+    <div class="handle">Boa Viagem · Recife</div>
+  </div>
+
+  <div class="story" id="story">
+    <div class="wave top"></div>
+    <img class="icon" src="../logo/icon-badge.svg" alt="">
+    <div class="k">Combo da manhã</div>
+    <h2>Café coado + pão na chapa</h2>
+    <p>Das 7h às 10h, de segunda a sábado.</p>
+    <div class="cta">R$ 12 · Peça pelo WhatsApp</div>
+    <div class="wave bottom"></div>
+  </div>
+</body>
+</html>

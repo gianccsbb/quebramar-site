@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quebra-Mar Café &amp; Padaria · Boa Viagem, Recife</title>
+  <meta name="description" content="Café coado, pão quentinho e doces regionais a uma quadra da praia de Boa Viagem. Monte seu pedido e envie pelo WhatsApp.">
+  <meta property="og:title" content="Quebra-Mar Café &amp; Padaria">
+  <meta property="og:description" content="Café coado, pão quentinho e brisa do mar em Boa Viagem, Recife.">
+  <meta name="theme-color" content="#0F4C5C">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#cardapio" data-i18n="skip">Pular para o cardápio</a>
+
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a href="#inicio" class="topbar__logo"><img src="assets/logo-horizontal.svg" alt="Quebra-Mar Café &amp; Padaria" width="230" height="58"></a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#cardapio" data-i18n="nav.menu">Cardápio</a>
+        <a href="#sobre" data-i18n="nav.about">Sobre</a>
+        <a href="#visite" data-i18n="nav.visit">Visite</a>
+      </nav>
+      <button class="lang" id="langToggle" type="button" aria-label="Switch to English">EN</button>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div>
+          <p class="kicker" data-i18n="hero.kicker">Boa Viagem · Recife</p>
+          <h1 data-i18n="hero.title">Café coado, pão quentinho e brisa do mar.</h1>
+          <p class="lead" data-i18n="hero.lead">A uma quadra da praia, servimos café da manhã nordestino, doces regionais e aquele cafezinho passado na hora.</p>
+          <div class="hero__ctas">
+            <a class="btn btn--primary" href="#cardapio" data-i18n="hero.cta1">Ver cardápio</a>
+            <a class="btn btn--ghost" href="#pedido" data-i18n="hero.cta2">Montar pedido</a>
+          </div>
+          <p class="status" id="openStatus" aria-live="polite"></p>
+        </div>
+        <div class="hero__art" aria-hidden="true">
+          <img src="assets/icon.svg" alt="" width="340" height="340">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cardapio" aria-labelledby="menuTitle">
+      <div class="wrap">
+        <h2 id="menuTitle" data-i18n="menu.title">Cardápio</h2>
+        <p class="section__intro" data-i18n="menu.intro">Toque em “+” para adicionar ao pedido. Você envia tudo pelo WhatsApp no final.</p>
+        <div class="tabs" role="tablist" aria-label="Categorias">
+          <button role="tab" aria-selected="true" aria-controls="cat-cafes" id="tab-cafes" data-cat="cafes" data-i18n="cat.cafes">Cafés</button>
+          <button role="tab" aria-selected="false" aria-controls="cat-padaria" id="tab-padaria" data-cat="padaria" data-i18n="cat.padaria" tabindex="-1">Padaria</button>
+          <button role="tab" aria-selected="false" aria-controls="cat-doces" id="tab-doces" data-cat="doces" data-i18n="cat.doces" tabindex="-1">Doces regionais</button>
+        </div>
+        <div id="menuPanels"></div>
+      </div>
+    </section>
+
+    <section class="section section--sand" id="pedido" aria-labelledby="orderTitle">
+      <div class="wrap order">
+        <div>
+          <h2 id="orderTitle" data-i18n="order.title">Seu pedido</h2>
+          <p class="section__intro" data-i18n="order.intro">Revise os itens e envie. A gente confirma pelo WhatsApp e separa tudo para você retirar.</p>
+        </div>
+        <div class="order__card">
+          <ul class="order__list" id="orderList" aria-live="polite"></ul>
+          <p class="order__empty" id="orderEmpty" data-i18n="order.empty">Nenhum item ainda. Adicione algo do cardápio.</p>
+          <div class="order__total"><span data-i18n="order.total">Total</span><strong id="orderTotal">R$ 0,00</strong></div>
+          <label class="order__label" for="orderName" data-i18n="order.name">Seu nome</label>
+          <input class="order__input" id="orderName" type="text" autocomplete="given-name" maxlength="40">
+          <a class="btn btn--primary btn--block" id="sendOrder" href="#" aria-disabled="true" data-i18n="order.send">Enviar pelo WhatsApp</a>
+          <button class="link" id="clearOrder" type="button" data-i18n="order.clear">Limpar pedido</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre" aria-labelledby="aboutTitle">
+      <div class="wrap about">
+        <div>
+          <h2 id="aboutTitle" data-i18n="about.title">Um café com cheiro de maré</h2>
+          <p data-i18n="about.p1">O Quebra-Mar nasceu da ideia de juntar duas coisas que o Recife faz bem: café da manhã caprichado e fim de tarde perto do mar.</p>
+          <p data-i18n="about.p2">O pão sai do forno três vezes por dia, o café é coado na hora e os doces seguem receitas de família: bolo de rolo, Souza Leão e cartola.</p>
+        </div>
+        <ul class="facts">
+          <li><strong>3×</strong><span data-i18n="about.f1">fornadas por dia</span></li>
+          <li><strong>7h</strong><span data-i18n="about.f2">abrimos cedo, todo dia</span></li>
+          <li><strong>1</strong><span data-i18n="about.f3">quadra da praia</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="visite" aria-labelledby="visitTitle">
+      <div class="wrap visit">
+        <div>
+          <h2 id="visitTitle" data-i18n="visit.title">Visite a gente</h2>
+          <p class="address">Rua do Quebra-Mar, 123 · Boa Viagem<br>Recife · PE</p>
+          <p class="note" data-i18n="visit.note">(Endereço fictício. Projeto conceitual.)</p>
+        </div>
+        <table class="hours" aria-label="Horário de funcionamento">
+          <tbody>
+            <tr><th scope="row" data-i18n="days.weekdays">Segunda a sábado</th><td>7h – 19h</td></tr>
+            <tr><th scope="row" data-i18n="days.sunday">Domingo</th><td>7h – 12h</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <img src="assets/logo-mono-light.svg" alt="" width="150" height="106">
+      <p data-i18n="footer.disclaimer">Quebra-Mar Café &amp; Padaria é uma marca fictícia, criada como projeto de portfólio (identidade visual e site).</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>

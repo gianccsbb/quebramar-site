@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Quebra-Mar — Brand sheet</title>
+<style>
+  :root{--mare:#0F4C5C;--recife:#3A8D8F;--coral:#E07A5F;--areia:#F2E8CF;--cafe:#3B2A24;--creme:#FFF9F0}
+  *{box-sizing:border-box;margin:0}
+  body{width:1600px;height:1000px;background:var(--creme);font-family:Inter,sans-serif;color:var(--cafe);padding:56px 64px;
+       display:grid;grid-template-columns:1.1fr 1fr;grid-template-rows:auto 1fr;gap:28px 48px}
+  header{grid-column:1/-1;display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2px solid var(--areia);padding-bottom:18px}
+  h1{font-family:Lora,serif;font-weight:700;font-size:40px;color:var(--mare)}
+  .tag{font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:var(--recife);font-weight:600}
+  h2{font-size:13px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:var(--recife);margin-bottom:14px}
+  .card{background:#fff;border-radius:18px;padding:24px;box-shadow:0 1px 0 rgba(59,42,36,.06)}
+  .logos{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .logos .card{display:flex;align-items:center;justify-content:center;height:205px}
+  .logos .dark{background:var(--mare)}
+  .logos img{max-height:160px;max-width:92%}
+  .logos .wide{grid-column:1/-1;height:150px}
+  .logos .wide img{max-height:110px}
+  .right{display:flex;flex-direction:column;gap:22px}
+  .swatches{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+  .sw{border-radius:14px;height:118px;padding:12px;display:flex;flex-direction:column;justify-content:flex-end;font-size:12px;font-weight:600}
+  .sw span{display:block;font-weight:400;opacity:.85;margin-top:2px}
+  .type{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .type .big{font-family:Lora,serif;font-weight:700;font-size:44px;color:var(--mare);line-height:1.1}
+  .type .body{font-size:30px;font-weight:600}
+  .type p{font-size:13px;margin-top:8px;line-height:1.5;color:#6b5a52}
+  .assets{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:center}
+  .pattern{height:110px;border-radius:14px;background:url(../logo/pattern-waves.svg)}
+  .rules{font-size:14px;line-height:1.65}
+  .rules b{color:var(--mare)}
+  footer{position:absolute;right:64px;bottom:22px;font-size:12px;color:#8a7a72}
+</style>
+</head>
+<body>
+<header>
+  <div><div class="tag">Brand identity · Concept project</div><h1>Quebra-Mar Café &amp; Padaria</h1></div>
+  <div class="tag">Recife · Boa Viagem</div>
+</header>
+
+<section>
+  <h2>Logo system</h2>
+  <div class="logos">
+    <div class="card"><img src="../logo/logo-primary.svg" alt="Primary logo"></div>
+    <div class="card dark"><img src="../logo/logo-mono-light.svg" alt="Reversed logo"></div>
+    <div class="card wide"><img src="../logo/logo-horizontal.svg" alt="Horizontal logo"></div>
+    <div class="card"><img src="../logo/icon-badge.svg" alt="Icon badge"></div>
+    <div class="card"><img src="../logo/logo-mono-dark.svg" alt="One-color logo"></div>
+  </div>
+</section>
+
+<section class="right">
+  <div>
+    <h2>Color palette</h2>
+    <div class="swatches">
+      <div class="sw" style="background:#0F4C5C;color:#FFF9F0">Maré<span>#0F4C5C</span></div>
+      <div class="sw" style="background:#3A8D8F;color:#FFF9F0">Recife<span>#3A8D8F</span></div>
+      <div class="sw" style="background:#E07A5F;color:#3B2A24">Coral<span>#E07A5F</span></div>
+      <div class="sw" style="background:#F2E8CF;color:#3B2A24">Areia<span>#F2E8CF</span></div>
+      <div class="sw" style="background:#3B2A24;color:#FFF9F0">Café<span>#3B2A24</span></div>
+      <div class="sw" style="background:#FFF9F0;color:#3B2A24;border:1px solid #eadfca">Creme<span>#FFF9F0</span></div>
+    </div>
+  </div>
+  <div>
+    <h2>Typography</h2>
+    <div class="type">
+      <div class="card"><div class="big">Lora Bold</div><p>Headlines, logo wordmark, menu titles.</p></div>
+      <div class="card"><div class="body">Inter</div><p>Body text, prices, labels and buttons. SemiBold for small caps with wide tracking.</p></div>
+    </div>
+  </div>
+  <div>
+    <h2>Assets &amp; usage</h2>
+    <div class="assets">
+      <div class="pattern"></div>
+      <div class="rules">
+        <b>Wave pattern</b> for packaging, cups and social backgrounds.<br>
+        <b>Coral</b> is an accent only: steam, buttons, highlights.<br>
+        <b>Minimum size:</b> icon 24 px, horizontal logo 120 px wide.<br>
+        Use the <b>reversed logo</b> on Maré or photos; never on Coral.
+      </div>
+    </div>
+  </div>
+  <div>
+    <h2>Social templates</h2>
+    <div style="display:flex;gap:14px;align-items:flex-start">
+      <img src="../social/instagram-post-bolo-de-rolo.png" style="height:200px;border-radius:12px" alt="">
+      <img src="../social/instagram-story-combo-manha.png" style="height:200px;border-radius:12px" alt="">
+      <div class="rules" style="font-size:13px;max-width:250px">Feed post (1080×1080) and story (1080×1920) built as editable HTML templates: swap the text and price, keep the layout.</div>
+    </div>
+  </div>
+</section>
+<footer>Fictional brand created for portfolio purposes.</footer>
+</body>
+</html>

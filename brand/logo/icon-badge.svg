@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="Quebra-Mar Café &amp; Padaria"><title>Quebra-Mar Café &amp; Padaria</title><circle cx="100" cy="100" r="100" fill="#F2E8CF"/><g transform="translate(18 10) scale(0.82)">
+  <path d="M84 84 C74 73 94 64 84 50" fill="none" stroke="#E07A5F" stroke-width="7" stroke-linecap="round"/>
+  <path d="M108 84 C98 73 118 64 108 50" fill="none" stroke="#E07A5F" stroke-width="7" stroke-linecap="round"/>
+  <path d="M56 96 H136 V116 C136 140 118 158 96 158 C74 158 56 140 56 116 Z" fill="#0F4C5C"/>
+  <path d="M136 104 C153 104 158 112 158 121 C158 131 150 138 136 138" fill="none" stroke="#0F4C5C" stroke-width="9" stroke-linecap="round"/>
+  <path d="M34 178 C50 168 66 168 82 178 S114 188 130 178 S158 168 170 175" fill="none" stroke="#3A8D8F" stroke-width="8" stroke-linecap="round"/>
+</g></svg>
