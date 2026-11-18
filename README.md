@@ -1,5 +1,7 @@
 # Quebra-Mar Café & Padaria: brand identity + website
 
+**Live site:** https://gianccsbb.github.io/quebramar-site/
+
 > **Concept project.** Quebra-Mar is a fictional café in Boa Viagem, Recife, created to show a complete small-business package: visual identity, social media templates and a working website. The address and business are fictional.
 
 ![Website on desktop](screenshots/site-desktop-hero.png)
@@ -27,7 +29,7 @@ The logo text is converted to vector outlines, so the files look the same on any
 
 ![Brand sheet](brand/brand-sheet.png)
 
-### Website (`site/`)
+### Website (`docs/`)
 A single-page, responsive site in plain HTML, CSS and JavaScript (no framework, no build step).
 
 - **Menu with category tabs**, keyboard accessible (arrow keys switch tabs)
@@ -38,7 +40,7 @@ A single-page, responsive site in plain HTML, CSS and JavaScript (no framework, 
 - The order and language choice survive a page reload
 - Prices are handled in cents, so totals never show rounding errors
 
-To set the real WhatsApp number, edit `WHATSAPP_NUMBER` at the top of `site/app.js` (international format, digits only). It's empty in this demo, so WhatsApp asks which contact to send to.
+To set the real WhatsApp number, edit `WHATSAPP_NUMBER` at the top of `docs/app.js` (international format, digits only). It's empty in this demo, so WhatsApp asks which contact to send to.
 
 ## Run it locally
 ```bash
@@ -48,7 +50,7 @@ python -m http.server 8000
 ```
 
 ## Publish it (free)
-Push the `site/` folder to a GitHub repository and turn on **GitHub Pages** (Settings → Pages → deploy from branch). Netlify and Cloudflare Pages also work by dragging the folder in.
+The site lives in `docs/`, so GitHub Pages serves it directly: Settings → Pages → Deploy from a branch → `main` / `/docs`. Netlify and Cloudflare Pages also work by dragging the folder in.
 
 ## Screenshots
 | Desktop | Mobile |
